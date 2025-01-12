@@ -14,7 +14,6 @@ app.use(express.json())
 app.use("/", router)
 
 dbconnect();
-fetchdata()
 
 schedule.scheduleJob('0 */2 * * *', fetchdata)
 
